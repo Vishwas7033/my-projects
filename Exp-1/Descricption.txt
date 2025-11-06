@@ -1,0 +1,37 @@
+Learnings from the Experiment:
+   In this experiment, I learned how to create a simple yet functional Student
+   Registration Form using HTML5. I gained practical understanding of various
+   input types like 'text', 'email', and number-like entries, and how to apply
+   attributes such as 'required', 'placeholder', 'pattern', 'min', and 'max' for
+   basic client-side validation.
+   I also understood the importance of using the 'label' tag with the 'for'
+   attribute to improve accessibility and form usability.
+
+Test Cases/Scenarios Covered :
+   - Validation of Name Field:
+     Entered the name "Shivansh Kutlehria" to test valid input.
+     Also tested with invalid names like "Shivansh123" and "Shiv@ns#"
+     which were rejected due to the pattern="[A-Za-z\s]+" restriction.
+
+   - Email Format Checking:
+     Provided a valid email like "shivansh@example.com" which passed the validation.
+     Then tested with invalid emails such as "shivansh@", "shivansh.com", and
+     "shivansh@com" which were flagged as invalid by the browser.
+
+   - Required Field Check:
+     Attempted to submit the form without entering the name, email, and age fields
+     to confirm that the form does not submit and displays validation messages for
+     each missing field.
+
+   - Age Input Validation:
+     Entered a valid age of "19", which was accepted.
+     Also tested with values like "17" and "150", which were rejected due to the
+     min="18" and max="100" restrictions.
+
+   - Successful Submission Test:
+     Filled in all fields correctly with:
+       Name: Shivansh Kutlehria
+       Email: shivansh@example.com
+       Age: 19
+     The form was successfully submitted, confirming that all validations worked
+     as expected.

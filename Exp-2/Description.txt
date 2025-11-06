@@ -1,0 +1,40 @@
+Objective:
+To create a clean, visually appealing, and responsive banking interface using HTML5 and CSS3, focusing on layout design, button styling, and responsiveness without adding JavaScript interactivity.
+
+-> Learnings from the Experiment:
+In this experiment, I learned how to design a responsive and user-friendly banking interface that displays a balance section along with Deposit and Withdraw buttons.
+I gained practical understanding of:
+
+1. Using Flexbox to arrange and align elements horizontally and vertically.
+
+2. Applying CSS box-shadow, padding, and border-radius to give the interface a modern and professional card-like appearance.
+
+3. Styling buttons with hover effects and color schemes to represent different actions (green for deposit, red for withdraw).
+
+4. Utilizing media queries to adapt the button layout from row to column for smaller screens.
+
+5. Maintaining visual hierarchy by emphasizing the balance display with larger font size and distinct color.
+
+-> Test Cases/Scenarios Covered:
+
+Balance Display Check:
+Displayed Balance: ₹0.00 in large, bold, green text to ensure visibility and emphasis.
+
+Deposit Button Styling:
+Verified that the Deposit button appears in green color with a hover effect changing it to a darker green (#43a047).
+
+Withdraw Button Styling:
+Verified that the Withdraw button appears in red color with a hover effect changing it to a darker red (#e53935).
+
+Layout Centering Test:
+Confirmed that the interface remains perfectly centered both vertically and horizontally across all screen sizes.
+
+Responsive Design Test:
+On larger screens (width > 480px), the Deposit and Withdraw buttons appear side-by-side with equal spacing.
+On smaller screens (width ≤ 480px), the buttons adjust layout for better mobile usability.
+
+Hover Effect Validation:
+Tested that hovering over each button smoothly changes its background color without affecting size or alignment.
+
+Spacing and Padding Check:
+Confirmed that the balance display and buttons maintain proper padding, gap spacing, and alignment for a neat UI.

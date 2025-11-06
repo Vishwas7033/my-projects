@@ -1,0 +1,48 @@
+
+Project: Admin Dashboard with CSS Grid Layout and Theme Switching
+
+This project is a simple Admin Dashboard webpage. It shows how to arrange a web page using CSS Grid and how to add a dark mode without using JavaScript.
+
+HTML Explanation
+The HTML file builds the structure of the page.
+
+1. Dark Mode Toggle
+   - There is a hidden checkbox (#switch) that changes the page between light mode and dark mode.
+   - The label in the header is used as the button to turn dark mode on or off.
+
+2. Main Sections
+   - Header: Shows the title "Admin Dashboard" and the dark mode label.
+   - Navigation (nav): A side menu with links to Home, User, and Settings.
+   - Main Content (main): A welcome message and some admin information.
+   - Footer: Shows a copyright.
+
+3. Grid Container
+   - All these sections are inside a .container div.
+   - CSS Grid is used to arrange them in rows and columns.
+
+CSS Explanation
+The CSS uses variables for colors, so switching between light and dark themes is easy.
+
+1. Theme Colors
+   - Light mode uses green, white, and black.
+   - Dark mode changes these colors to darker shades.
+
+2. Dark Mode Switch
+   - The rule input:checked ~ .container changes the color variables when the checkbox is checked.
+   - This makes dark mode work without any JavaScript.
+
+3. Layout
+   - .container uses CSS Grid:
+       - Columns: Left side (150px) for menu, right side for content.
+       - Rows: Header (70px), main part (auto), footer (60px).
+
+4. Styling for Each Section
+   - Header: Goes across the top and covers both columns.
+   - Navigation: A vertical list of links.
+   - Main: Changes background and text color depending on mode.
+   - Footer: Goes across the bottom, text is centered.
+
+5. Hidden Checkbox
+   - The checkbox is hidden (display: none), and only the label is clickable.
+
+This design makes it easy to organize the page and switch between light and dark mode using only CSS.
