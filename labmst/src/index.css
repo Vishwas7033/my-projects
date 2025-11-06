@@ -1,0 +1,62 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.employee-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.employee-card input {
+  padding: 5px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-left: 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.save-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #388e3c;
+}
+
+.cancel-btn {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #616161;
+}
