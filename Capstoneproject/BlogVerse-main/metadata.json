@@ -1,0 +1,5 @@
+{
+  "name": "MERN Blog Platform",
+  "description": "A full-featured blog platform where users can create posts, comment, and manage their profiles. This is a frontend-only demonstration with a mocked backend to showcase a dynamic and interactive multi-user blogging experience.",
+  "requestFramePermissions": []
+}

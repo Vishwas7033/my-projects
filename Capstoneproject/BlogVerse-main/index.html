@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A full-featured blog platform where users can create posts, comment, and manage their profiles." />
+  <meta name="author" content="BlogVerse" />
+  <title>BlogVerse - MERN Blog Platform</title>
+
+  <!-- Tailwind CSS with Typography Plugin -->
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#1a1a2e',   // Very dark blue
+            secondary: '#16213e', // Dark blue
+            accent: '#0f3460',    // Deeper blue
+            highlight: '#e94560', // Reddish pink
+            textlight: '#dcdcdc', // Light gray for primary text
+            textdark: '#a9a9a9',  // Muted gray for secondary text
+          },
+          typography: ({ theme }) => ({
+            invert: {
+              css: {
+                '--tw-prose-body': theme('colors.textdark'),
+                '--tw-prose-headings': theme('colors.textlight'),
+                '--tw-prose-links': theme('colors.highlight'),
+                '--tw-prose-bold': theme('colors.textlight'),
+                '--tw-prose-counters': theme('colors.textdark'),
+                '--tw-prose-bullets': theme('colors.textdark'),
+                '--tw-prose-hr': theme('colors.accent'),
+                '--tw-prose-quotes': theme('colors.textlight'),
+                '--tw-prose-quote-borders': theme('colors.accent'),
+                '--tw-prose-captions': theme('colors.textdark'),
+              },
+            },
+          }),
+        },
+      },
+    }
+  </script>
+  
+  <style>
+    body {
+      background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
+      background-color: #1a1a2e;
+      background-attachment: fixed;
+    }
+  </style>
+
+  <!-- Import Map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://aistudiocdn.com/react@^19.2.0",
+      "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+      "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5",
+      "react/": "https://aistudiocdn.com/react@^19.2.0/"
+    }
+  }
+  </script>
+
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="text-textlight">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  
+  <!-- Main app script -->
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
